@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中文转拼音</title>
+</head>
+<body>
+	<input type="text" id="chinese" placeholder="输入中文">
+	<p id="pinyin"></p>
+	<script type="text/javascript" src="./index.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			document.getElementById('chinese').addEventListener('keyup', function(e)  {
+				var pinyin = codefans_net_CC2PY(e.target.value);
+				document.getElementById('pinyin').innerText = pinyin;
+			}, false);
+		}
+	</script>
+</body>
+</html>
