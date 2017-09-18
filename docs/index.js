@@ -7,7 +7,7 @@ function codefans_net_CC2PY(l1) {
         var val = l1.substr(i,1);
         var name = arraySearch(val,PinYin);
         if(reg.test(val)) {
-            I1 = I1 + val + ' ';
+            I1 = I1 + val;
         } else if (name!==false) {
             I1 = I1 + name + ' ';
         }
